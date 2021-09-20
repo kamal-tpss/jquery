@@ -1,89 +1,1022 @@
-<table width="600" style="margin:20px auto" cellspacing="0" cellpadding="0" style="padding-bottom: 30px;">
-    <tbody>
-        <tr>
-            <td style="text-align:left">
- 
-                <div align="center" style="font-family:'Roboto',sans-serif;color:#4a4a4a;width:800px;margin:15px auto">
-                    <table border="0" cellpadding="0" cellspacing="0" style="border:1px solid #dddddd">
-                        <thead>
-                            <tr>
-                                <td style="text-align:center;vertical-align:middle; padding-top:40px"> 
-                                    <a href="#" style="vertical-align:middle"><img src="https://dev.leecage.io/images/logo.svg" class="logo" style="width:160px;"></a>
-                                    <a
-                                        href="https://dev.leecage.io/"
-                                        src="" style="display:inline-block;"
-                                        class="CToWUd"><img src="https://dev.leecage.io/images/leecage-logo.png"></a>
-                                </td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="m_-2938081721913931095first_td">
-                                <td style="padding:0px 50px">
-                                    <table style="width:100%;border-collapse:collapse;margin-bottom:20px">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding:0px 35px">
-                                                    <h1
-                                                        style="font-size:30px;font-weight:bold;line-height:1.4;font-family:'Roboto',sans-serif;color:#333;margin:40px 0;text-align:center">
-                                                        Lorem Ipsum has been the industry
-                                                    </h1>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="margin-top:55px"> 
-                                                    <p
-                                                        style="font-size:16px;font-weight:400;line-height:1.5;letter-spacing:0.45px;color:#727171;font-family:'Roboto',sans-serif;margin-bottom:20px">
-                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                                                        type and scrambled
-                                                    </p>
-                                                    <p
-                                                        style="font-size:16px;font-weight:400;line-height:1.5;letter-spacing:0.45px;color:#727171;font-family:'Roboto',sans-serif">
-                                                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                                                        type and scrambled it to make a type specimen book. It has survived not only five centuries
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                         
-                                            <tr>
-                                                <td
-                                                    style="text-align: center;">
-                                                    <a href="https://dev.leecage.io"
-                                                        style="text-decoration:none;font-size:20px;font-weight:bold;letter-spacing:1px;color:#fff;background:linear-gradient(90deg, #6fda44 0%, #44da67 51%);border-radius:0px;text-align:center;padding:12px 20px; margin:30px 0;display: inline-block;"
-                                                        target="_blank">Get
-                                                        Started</a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th style="padding:30px;background-color:#f5f5fa;text-align:center">
-                                    <p
-                                        style="margin-bottom:0px;margin-top:0;font-size:12px;line-height:2;color:#4a4a4a;font-weight:300;letter-spacing:0.75px;font-family:'Roboto',sans-serif">
-                                        © 2021 LeeCage owned by Leemo. All rights reserved
-                                        
-                                    </p>
-                                    <!--<a href="https://www.facebook.com/Tech.Prastish.Software.Solutions" target="_blank">
-                                        <img src="https://dev.leecage.io/images/facebook.svg"> </a> &emsp;<a
-                                        href="https://www.facebook.com/Tech.Prastish.Software.Solutions" target="_blank">
-                                        <img src="https://dev.leecage.io/images/facebook.svg"> </a> &emsp; <a
-                                        href="https://www.facebook.com/Tech.Prastish.Software.Solutions" target="_blank">
-                                        <img src="https://dev.leecage.io/images/facebook.svg"> </a> &emsp;-->
-                            
-                                </th>
-                            </tr>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        body {
+            background-color: blue;
+        }
+
+        @-webkit-keyframes updown {
+
+            0%,
+            50%,
+            100% {
+                transform: translatey(0);
+            }
+
+            20% {
+                transform: translatey(5px);
+            }
+
+            25% {
+                transform: translatey(-20px);
+            }
+
+            30% {
+                transform: translatey(20px);
+            }
+
+            35% {
+                transform: translatey(-5px);
+            }
+        }
+
+        @keyframes updown {
+
+            0%,
+            50%,
+            100% {
+                transform: translatey(0);
+            }
+
+            20% {
+                transform: translatey(5px);
+            }
+
+            25% {
+                transform: translatey(-20px);
+            }
+
+            30% {
+                transform: translatey(20px);
+            }
+
+            35% {
+                transform: translatey(-5px);
+            }
+        }
+
+        .hamburger {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            display: flex;
+            height: 18px;
+            width: 24px;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            z-index: 1;
+        }
+
+        .hamburger__icon {
+            display: inline-block;
+            height: 2px;
+            width: 24px;
+            background: #fff;
+            border-radius: 2px;
+        }
+
+        .navbar {
+            height: 100vh;
+            width: 270px;
+            background: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 60px;
+            display: flex;
+            flex-direction: column;
+            transform: translatex(-100%);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .navbar__close {
+            position: absolute;
+            top: 50%;
+            right: -30px;
+            background: #fff;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.03);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translatex(-100%);
+            cursor: pointer;
+            transition: transform 0.4s ease-in-out 0.2s;
+        }
+
+        .navbar__close::before,
+        .navbar__close::after {
+            content: "";
+            height: 2px;
+            background: #898989;
+            width: 24px;
+            display: block;
+            position: absolute;
+        }
+
+        .navbar__close::after {
+            transform: rotate(90deg);
+        }
+
+        .navbar__menu {
+            display: flex;
+            flex-direction: column;
+            /*flex: 1;*/
+            justify-content: space-around;
+            font-size: 36px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+            color: #898989;
+        }
+
+        .navbar__menu a {
+            color: currentcolor;
+            text-decoration: none;
+            transform: translatex(-80%);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .navbar__menu a::before {
+            content: "";
+            height: 2px;
+            background: #898989;
+            width: 120px;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            transform: translatex(-50%);
+            opacity: 0;
+            transition: transform 0.4s ease-in-out, opacity 0.4s linear;
+        }
+
+        .navbar__menu a:hover::before {
+            transform: translatex(0);
+            opacity: 1;
+        }
+
+        .navbar__menu a:nth-child(1) {
+            transition-delay: 0.05s;
+        }
+
+        .navbar__menu a:nth-child(2) {
+            transition-delay: 0.1s;
+        }
+
+        .navbar__menu a:nth-child(3) {
+            transition-delay: 0.15s;
+        }
+
+        .navbar__menu a:nth-child(4) {
+            transition-delay: 0.2s;
+        }
+
+        .navbar__menu a:nth-child(5) {
+            transition-delay: 0.25s;
+        }
+
+        .navbar__social {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .navbar__social li {
+            margin: 4px;
+        }
+
+        .navbar__social a,
+        .navbar__social svg {
+            display: inline-block;
+            height: 18px;
+            width: 18px;
+        }
+
+        .menu-control {
+            display: none;
+        }
+
+        .menu-control:checked+.navbar {
+            transform: translatex(0);
+        }
+
+        .menu-control:checked+.navbar .navbar__close {
+            transform: translatex(0) rotate(45deg);
+        }
+
+        .menu-control:checked+.navbar .navbar__menu a {
+            transform: translatex(0);
+        }
+
+        /*Button*/
+        .primary-btn:hover {
+            -webkit-transform: rotateY(15deg);
+            -moz-transform: rotateY(15deg);
+            -ms-transform: rotateY(15deg);
+            transform: rotateY(15deg);
+        }
+
+        .primary-btn {
+            display: block;
+            background: red;
+            outline: 1px solid transparent;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .btn {
+            border: none;
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            cursor: pointer;
+            padding: 25px 80px;
+            display: inline-block;
+            margin: 15px 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            outline: none;
+            position: relative;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        /*another*/
+
+        .button.dark {
+            --background: #2F3545;
+            --shadow: 0 2px 8px -1px rgba(21, 25, 36, 0.32);
+            --shadow-hover: 0 4px 20px -2px rgba(21, 25, 36, 0.5);
+        }
+
+        .button.white {
+            --background: #fff;
+            --text: #275efe;
+            --shadow: 0 2px 8px -1px rgba(18, 22, 33, 0.04);
+            --shadow-hover: 0 4px 20px -2px rgba(18, 22, 33, 0.12);
+        }
+
+        .button.fast {
+            --duration: .32s;
+        }
+
+        .button {
+            --background: #275efe;
+            --text: #fff;
+            --font-size: 16px;
+            --duration: .44s;
+            --move-hover: -4px;
+            --shadow: 0 2px 8px -1px rgba(39, 94, 254, 0.32);
+            --shadow-hover: 0 4px 20px -2px rgba(39, 94, 254, 0.5);
+            --font-shadow: var(--font-size);
+            padding: 16px 32px;
+            font-family: "Roboto";
+            font-weight: 500;
+            line-height: var(--font-size);
+            border-radius: 24px;
+            display: inline-block;
+            outline: none;
+            text-decoration: none;
+            font-size: var(--font-size);
+            letter-spacing: 0.5px;
+            background: var(--background);
+            color: var(--text);
+            box-shadow: var(--shadow);
+            transform: translateY(var(--y)) translateZ(0);
+            transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+        }
+
+        .button div {
+            display: flex;
+            overflow: hidden;
+            text-shadow: 0 var(--font-shadow) 0 var(--text);
+        }
+
+        .button div span {
+            display: block;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            font-style: normal;
+            transition: transform var(--duration) ease;
+            transform: translateY(var(--m)) translateZ(0);
+        }
+
+        .button div span:nth-child(1) {
+            transition-delay: 0.05s;
+        }
+
+        .button div span:nth-child(2) {
+            transition-delay: 0.1s;
+        }
+
+        .button div span:nth-child(3) {
+            transition-delay: 0.15s;
+        }
+
+        .button div span:nth-child(4) {
+            transition-delay: 0.2s;
+        }
+
+        .button div span:nth-child(5) {
+            transition-delay: 0.25s;
+        }
+
+        .button div span:nth-child(6) {
+            transition-delay: 0.3s;
+        }
+
+        .button div span:nth-child(7) {
+            transition-delay: 0.35s;
+        }
+
+        .button div span:nth-child(8) {
+            transition-delay: 0.4s;
+        }
+
+        .button div span:nth-child(9) {
+            transition-delay: 0.45s;
+        }
+
+        .button div span:nth-child(10) {
+            transition-delay: 0.5s;
+        }
+
+        .button div span:nth-child(11) {
+            transition-delay: 0.55s;
+        }
+
+        .button:hover {
+            --y: var(--move-hover);
+            --shadow: var(--shadow-hover);
+        }
+
+        .button:hover span {
+            --m: calc(var(--font-size) * -1);
+        }
+
+        .button.reverse {
+            --font-shadow: calc(var(--font-size) * -1);
+        }
+
+        .button.reverse:hover span {
+            --m: calc(var(--font-size));
+        }
 
 
 
-                        </tfoot>
-                    </table>
+
+
+        body .button {
+            margin: 0 12px;
+        }
+
+        /*blob button*/
+        .buttons {
+            margin-top: 50px;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        .blob-btn {
+            z-index: 1;
+            position: relative;
+            padding: 20px 46px;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #0505A9;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            transition: color 0.5s;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+
+        .blob-btn:before {
+            content: "";
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #0505A9;
+            border-radius: 30px;
+        }
+
+        .blob-btn:after {
+            content: "";
+            z-index: -2;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s 0.2s;
+            border-radius: 30px;
+        }
+
+        .blob-btn:hover {
+            color: #FFFFFF;
+            border-radius: 30px;
+        }
+
+        .blob-btn:hover:after {
+            transition: all 0.3s;
+            left: 0;
+            top: 0;
+            border-radius: 30px;
+        }
+
+        .blob-btn__inner {
+            z-index: -1;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            background: #ffffff;
+        }
+
+        .blob-btn__blobs {
+            position: relative;
+            display: block;
+            height: 100%;
+            filter: url("#goo");
+        }
+
+        .blob-btn__blob {
+            position: absolute;
+            top: 2px;
+            width: 25%;
+            height: 100%;
+            background: #0505A9;
+            border-radius: 100%;
+            transform: translate3d(0, 150%, 0) scale(1.7);
+            transition: transform 0.45s;
+        }
+
+        @supports (filter: url("#goo")) {
+            .blob-btn__blob {
+                transform: translate3d(0, 150%, 0) scale(1.4);
+            }
+        }
+
+        .blob-btn__blob:nth-child(1) {
+            left: 0%;
+            transition-delay: 0s;
+        }
+
+        .blob-btn__blob:nth-child(2) {
+            left: 30%;
+            transition-delay: 0.08s;
+        }
+
+        .blob-btn__blob:nth-child(3) {
+            left: 60%;
+            transition-delay: 0.16s;
+        }
+
+        .blob-btn__blob:nth-child(4) {
+            left: 90%;
+            transition-delay: 0.24s;
+        }
+
+        .blob-btn:hover .blob-btn__blob {
+            transform: translateZ(0) scale(1.7);
+        }
+
+        @supports (filter: url("#goo")) {
+            .blob-btn:hover .blob-btn__blob {
+                transform: translateZ(0) scale(1.4);
+            }
+        }
+
+        /*overlay effects*/
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*-- global css --*/
+
+
+        .overlay-text-effect-3 {
+
+            transition: all .4s linear;
+            -webkit-transition: all .4s linear;
+            -moz-transition: all .4s linear;
+            -o-transition: all .4s linear;
+        }
+
+        .image-wrapper {
+            margin-bottom: 35px;
+        }
+
+        .effect-image-1 {
+            position: relative;
+            display: block;
+            height: 182px;
+            overflow: hidden;
+        }
+
+        .overlay-text p,
+        .overlay-sim-text-2 p,
+        .overlay-text-effect-3 p {
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            padding: 20px 20px;
+        }
+
+        .overlay {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: rgba(246, 0, 2, .7);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /*-- overlay text effect 3 --*/
+
+        .overlay-text-effect-3 {
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+            left: 20px;
+            top: 20px;
+            background: rgba(246, 0, 2, .7);
+            position: absolute;
+            outline: 5px solid rgba(246, 0, 2, .7);
+            outline-offset: 3px;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .effect-image-1:hover .overlay-text-1 {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .overlay-text-1 {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /*overlay 2*/
+
+        .wg-box-content {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .wg-box-content .wg-box-content-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            -webkit-transition: all 0.4s ease-in-out 0s;
+            -moz-transition: all 0.4s ease-in-out 0s;
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        .wg-box-content:hover .wg-box-content-overlay {
+            opacity: 1;
+        }
+
+        .wg-box-content-image {
+            width: 100%;
+        }
+
+        .wg-box-content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            opacity: 0;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            -moz-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .wg-box-content:hover .wg-box-content-details {
+            top: 50%;
+            left: 50%;
+            opacity: 1;
+        }
+
+        .wg-box-content-details h3 {
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+        }
+
+        .wg-box-content-details p {
+            color: #fff;
+            font-size: 0.8em;
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+
+        }
+
+        .wg-box-fadeIn-bottom {
+            top: 80%;
+        }
+
+        /*third*/
+
+        figure.snip0015 {
+            font-family: 'Raleway', Arial, sans-serif;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            min-width: 220px;
+            max-width: 310px;
+            max-height: 182px;
+            width: 100%;
+            background: #000000;
+            text-align: center;
+        }
+
+        figure.snip0015 * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        figure.snip0015 img {
+            opacity: 1;
+            width: 100%;
+            -webkit-transition: opacity 0.35s;
+            transition: opacity 0.35s;
+        }
+
+        figure.snip0015 figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 15px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        figure.snip0015 figcaption::before {
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            bottom: 50%;
+            left: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+            content: '';
+            opacity: 0;
+            background-color: #ffffff;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+
+        figure.snip0015 h2,
+        figure.snip0015 p {
+            margin: 0 0 5px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s;
+        }
+
+        figure.snip0015 h2 {
+            word-spacing: -0.15em;
+            font-weight: 300;
+            text-transform: uppercase;
+            -webkit-transform: translate3d(0%, 50%, 0);
+            transform: translate3d(0%, 50%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+            font-size: 20px;
+        }
+
+        figure.snip0015 h2 span {
+            font-weight: 800;
+        }
+
+        figure.snip0015 p {
+            font-weight: 200;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+
+        figure.snip0015 a {
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            color: #ffffff;
+        }
+
+        figure.snip0015:hover img {
+            opacity: 0.35;
+        }
+
+        figure.snip0015:hover figcaption h2 {
+            opacity: 1;
+            -webkit-transform: translate3d(0%, 0%, 0);
+            transform: translate3d(0%, 0%, 0);
+            -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+        }
+
+        figure.snip0015:hover figcaption p {
+            opacity: 0.9;
+            -webkit-transition-delay: 0.6s;
+            transition-delay: 0.6s;
+        }
+
+        figure.snip0015:hover figcaption::before {
+            background: rgba(255, 255, 255, 0);
+            top: 30px;
+            bottom: 30px;
+            opacity: 1;
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+
+        /*fourth*/
+
+        .snip1573 {
+            background-color: #000;
+            display: inline-block;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            max-width: 315px;
+            min-width: 230px;
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            height: 182px;
+        }
+
+        .snip1573 * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all 0.35s ease;
+            transition: all 0.35s ease;
+        }
+
+        .snip1573:before,
+        .snip1573:after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            -webkit-transition: all 0.35s ease;
+            transition: all 0.35s ease;
+            background-color: #000000;
+            border-left: 3px solid #fff;
+            border-right: 3px solid #fff;
+            content: '';
+            opacity: 0.9;
+            z-index: 1;
+        }
+
+        .snip1573:before {
+            -webkit-transform: skew(45deg) translateX(-155%);
+            transform: skew(45deg) translateX(-155%);
+        }
+
+        .snip1573:after {
+            -webkit-transform: skew(45deg) translateX(155%);
+            transform: skew(45deg) translateX(155%);
+        }
+
+        .snip1573 img {
+            backface-visibility: hidden;
+            max-width: 100%;
+            vertical-align: top;
+        }
+
+        .snip1573 figcaption {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            z-index: 2;
+            -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
+            opacity: 0;
+            -webkit-box-shadow: 0 0 10px #000000;
+            box-shadow: 0 0 10px #000000;
+        }
+
+        .snip1573 h3 {
+            background-color: #000000;
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: 1em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin: 0;
+            padding: 5px 10px;
+            text-transform: uppercase;
+        }
+
+        .snip1573 a {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 3;
+        }
+
+        .snip1573:hover>img,
+        .snip1573.hover>img {
+            opacity: 0.5;
+        }
+
+        .snip1573:hover:before,
+        .snip1573.hover:before {
+            -webkit-transform: skew(45deg) translateX(-55%);
+            transform: skew(45deg) translateX(-55%);
+        }
+
+        .snip1573:hover:after,
+        .snip1573.hover:after {
+            -webkit-transform: skew(45deg) translateX(55%);
+            transform: skew(45deg) translateX(55%);
+        }
+
+        .snip1573:hover figcaption,
+        .snip1573.hover figcaption {
+            -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav-bar-outer">
+        <label for="menu-control" class="hamburger">
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+            <i class="hamburger__icon"></i>
+        </label>
+
+        <input type="checkbox" id="menu-control" class="menu-control">
+
+        <aside class="navbar">
+
+            <nav class="navbar__menu">
+                <a href="">Home</a>
+                <a href="">About us</a>
+                <a href="">Services</a>
+                <a href="">Products</a>
+                <a href="">Contact</a>
+            </nav>
+
+            <label for="menu-control" class="navbar__close"></label>
+
+        </aside>
+    </div>
+    <div class="container">
+        <h1 style="text-align: center;">Button styles</h1>
+        <button class="btn primary-btn">3D Button</button>
+        <a href="" class="button">Button</a>
+        <a href="" class="button reverse dark">Reverse</a>
+        <a href="" class="button fast white">Fast</a>
+
+
+        <button class="blob-btn">
+            Blob Button
+            <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                </span>
+            </span>
+        </button>
+    </div>
+    <h1 style="text-align: center;">Image Overlay effects</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="effect-image-1">
+                    <img src="https://www.montereyairport.com/sites/main/files/main-images/camera_lense_0.jpeg"
+                        alt="image-1">
+                    <div class="overlay-text-effect-3 overlay-text-1">
+                        <p>lorem ipsum text init lorem ipsum text init</p>
+                    </div>
                 </div>
-                <img src="https://ci5.googleusercontent.com/proxy/8Mfl2a632RMMhQuyBcX7bgsHVnQkb7Ts1xR3JqGU-SNhUqtqZQO_WLTbinbPjQWJgIcUDifMRDwUGVsCkW4u7QC3iTwiW7EW6cHzEbPHEebI53kbY83MWc2u2CE8mIkmJ4UJeHDggGMWwY6NDPk6DbFP-s90wgXLav2ZU9bGwz0ZihoZXkmIOcw6oQbvr-n4VBzrsb5dEV2pHUa0pQ=s0-d-e1-ft#https://mgqx.maillist-manage.com/clicks/od3z7c20a21d93bddd3f194922a7acab158405e8687335b5b3e0fc465177a9218016/rd13f52e3f2598926d/zlogo.gif"
-                    alt="" height="1" width="1" class="CToWUd">
-            </td>
-        </tr>
-    </tbody>
-</table>
+            </div>
+            <div class="col-sm-3">
+                <div class="wg-box-content">
+                    <a href="#">
+                        <div class="wg-box-content-overlay"></div>
+                        <img class="wg-box-content-image"
+                            src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                        <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                            <h3 class="wg-box-content-title">This is a title</h3>
+                            <p class="wg-box-content-text">This is a short description</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <figure class="snip0015">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample38.jpg" alt="sample38" />
+                    <figcaption>
+                        <h2>I don't know <span>which</span> is worse</h2>
+                        <p>That everyone has his price, or that the price is always so low.</p>
+                        <a href="#"></a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-3">
+                <figure class="snip1573">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample89.jpg" alt="sample89" />
+                    <figcaption>
+                        <h3>Buy Now</h3>
+                    </figcaption>
+                    <a href="#"></a>
+                </figure>
+            </div>
+
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script>
+        document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+</body>
+
+</html>
